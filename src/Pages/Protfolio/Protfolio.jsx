@@ -49,7 +49,7 @@ const Protfolio = () => {
                 </Link> */}
 
         {/* finall desing touch */}
-        <div className="relativeflex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+        <div className="relativeflex w-full max-w-[26rem] flex-col rounded-xl bg-gray-300 bg-clip-border text-gray-700 shadow-lg">
           <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
             <img src={img2} alt="ui/ux review check" />
             <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
@@ -71,6 +71,7 @@ const Protfolio = () => {
               </span>
             </button>
           </div>
+
           <div className="p-6">
             <div className="mb-3 flex items-center justify-between">
               <h5 className="block font-sans text-xl font-medium leading-snug tracking-normal text-blue-gray-900 antialiased">
@@ -155,8 +156,9 @@ const Protfolio = () => {
             </Link>
           </div>
         </div>
+
         {/* finall desing touch */}
-        <div className="relativeflex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+        <div className="relativeflex w-full max-w-[26rem] flex-col rounded-xl  bg-gray-300 bg-clip-border text-gray-700 shadow-lg">
           <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
             <img src={img5} alt="ui/ux review check" />
             <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
@@ -263,7 +265,8 @@ const Protfolio = () => {
           </div>
         </div>
 
-        <div className="relative card grid-cols  flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+        {/* brand shop car */}
+        {/* <div className="relative card grid-cols  flex w-full max-w-[26rem] flex-col rounded-xl  bg-gray-300 bg-clip-border text-gray-700 shadow-lg">
           <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
             <img src={img1} />
             <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
@@ -362,10 +365,10 @@ const Protfolio = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* finall desing touch */}
-        <div className="relativeflex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+        <div className="relativeflex w-full max-w-[26rem] flex-col rounded-xl  bg-gray-300 bg-clip-border text-gray-700 shadow-lg">
           <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
             <img src={img3} alt="ui/ux review check" />
             <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
@@ -474,7 +477,7 @@ const Protfolio = () => {
           </div>
         </div>
         {/* finall desing touch */}
-        <div className="relativeflex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+        <div className="relativeflex w-full max-w-[26rem] flex-col rounded-xl  bg-gray-300 bg-clip-border text-gray-700 shadow-lg">
           <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
             <img src={img4} alt="ui/ux review check" />
             <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
@@ -579,7 +582,7 @@ const Protfolio = () => {
           </div>
         </div>
         {/* finall desing touch */}
-        <div className="relativeflex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+        <div className="relativeflex w-full max-w-[26rem] flex-col rounded-xl  bg-gray-300 bg-clip-border text-gray-700 shadow-lg">
           <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
             <img src={img4} alt="ui/ux review check" />
             <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>

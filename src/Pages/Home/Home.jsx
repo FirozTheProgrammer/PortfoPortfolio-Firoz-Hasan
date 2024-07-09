@@ -75,7 +75,7 @@ const Home = () => {
 
           <div className="box my-8 lg:my-0">
             <img
-              className="w-[300px] my-6 md:w-full  border-4 z-10 border-green-400 rounded-full"
+              className="w-[300px] my-6 md:w-full p-1 border-4 z-10 border-green-400 rounded-full"
               src={image}
               alt=""
             />
