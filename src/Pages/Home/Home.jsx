@@ -36,11 +36,11 @@ const Home = () => {
               I am a Web Developer at heart and create features that are best
               suited for the job at hand.
             </p>
-            <div className="flex flex-col md:flex-row justify-center md:items-center md:space-x-4">
+            <div className="flex flex-col md:flex-row justify-center lg:justify-start md:items-center md:space-x-4">
               <a href={resume} download="resume">
                 <button
                   type="button"
-                  className="bg-[#EBE9FC] duration-300 hover:bg-green-400 text-black font-bold rounded-md my-5 px-4 py-2"
+                  className=" duration-300 hover:bg-green-400 text-white hover:text-black font-bold border border-green-400 rounded-md my-5 px-8 py-2"
                 >
                   Download CV
                 </button>

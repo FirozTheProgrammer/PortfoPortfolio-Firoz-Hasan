@@ -22,10 +22,21 @@ const Protfolio = () => {
     return <span className="loading loading-ring loading-lg"></span>;
   }
   return (
-    <div className="pt-20 md:pt-10 px-10 lg:px-20">
-      <h2 className="text-black text-3xl font-bold mb-5">
-        Creative Portfolio{" "}
-      </h2>
+    <div className="pt-20 md:pt-10  px-10 lg:px-20">
+      <div className="lg:mb-20 text-center ">
+        <h2 className="text-white text-3xl lg:text-5xl text-center font-bold mb-5 ">
+          Creative Portfolio{" "}
+        </h2>
+        <p className="text-gray-300">
+          Welcome to my project portfolio! Here, you will find a curated
+          selection of my work, showcasing my skills and passion for web
+          development. Each project highlights my dedication to delivering
+          innovative solutions, utilizing cutting-edge technologies, and
+          continuously pushing the boundaries of creativity and technical
+          expertise. Explore my projects to see the diverse range of challenges
+          I have tackled and the impactful results I have achieved.
+        </p>
+      </div>
       <div className="grid  md:grid-cols-2 gap-4 md:gap-10 lg:gap-20">
         {/* <Link to={'https://tech-info-5ab1a.web.app/'} target="_blank" className="tooltip" data-tip="View Live" >
                     <img className="max-h-[500px]" src={img1} alt="" />
@@ -673,7 +684,6 @@ const Protfolio = () => {
           </div>
         </div>
       </div>
-  
     </div>
   );
 };

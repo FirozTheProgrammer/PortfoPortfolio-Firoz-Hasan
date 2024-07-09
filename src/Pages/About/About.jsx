@@ -186,12 +186,12 @@ const About = () => {
               Download CV
             </button>
           </a>
-          <a href={resume} download="resume">
+          <a href='' target="_blak">
             <button
               type="button"
-              className="bg-[#EBE9FC] duration-300 hover:bg-green-400 text-black font-bold rounded-md my-10 px-4 py-2"
+              className="bg-[#EBE9FC] duration-300 hover:bg-green-400 text-black font-bold rounded-md my-10 px-8 py-2"
             >
-              Download CV
+             View CV
             </button>
           </a>
         </div>
