@@ -71,7 +71,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col lg:flex-row  items-center space-y-5 lg:space-y-0  lg:justify-between md:px-5 py-5 lg:py-0 -ml-16 lg:-ml-0">
+        <div className=" flex flex-col lg:flex-row  items-center space-y-5 lg:space-y-0  lg:justify-between md:px-5 py-5 lg:py-0 -ml-20 lg:-ml-0">
           <div className="w-10 flex space-x-2">
             <p className="text-5xl font-semibold font-Poppins">
               {" "}

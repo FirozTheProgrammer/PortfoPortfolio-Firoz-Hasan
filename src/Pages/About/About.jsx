@@ -11,13 +11,13 @@ const About = () => {
     return (
         <div className='pt-20 md:pt-10'>
             <div className="px-10 lg:px-20">
-                <h2 className='text-black text-3xl font-bold'>About Me</h2>
+                <h2 className='font-Poppins text-3xl lg:text-5xl font-bold'>About Me</h2>
 
                 <div className="flex flex-col md:flex-row items-center md:space-x-20 mt-5 pb-10 border-b border-gray-300 ">
-                    <img src={image} className='w-72 md:w-5/12 ' alt="" />
+                    <img src={image} className='w-72 md:w-5/12 rounded-lg' alt="" />
                     <div className="text-left mt-4 md:mt-0">
-                        <h3 className='text-3xl text-black font-bold'>Firoz Al Hasan</h3>
-                        <p className='text-gray-500'>Front-End Web Developer</p>
+                        <h3 className='text-3xl lg:text-4xl font-bold'>Firoz Al Hasan</h3>
+                        <p className='text-gray-400 md:mt-2'>Front-End Web Developer</p>
                     </div>
                 </div>
                 <div className="space-y-5 py-10 border-b border-gray-300 text-gray-500">
