@@ -32,7 +32,15 @@ const Contact = () => {
   return (
     <div className="pt-20 md:pt-10">
       <div className="px-10 lg:px-20 ">
-        <h2 className="text-black text-3xl font-bold mb-5">Get in Touch</h2>
+        <div className="text-center">
+          <h2 className="text-white text-3xl lg:text-5xl font-bold mb-5">
+            Get in Touch
+          </h2>
+          <p className=" lg:px-40">
+            Have a question or a project idea? I&apos;d love to hear from you!
+            Reach out and let&apos;s create something amazing together.
+          </p>
+        </div>
         <div className="flex flex-col md:flex-rowjustify-center items-center space-x-10 py-10">
           <p className="text-black font-bold flex  items-center space-x-2 text-xl">
             {" "}

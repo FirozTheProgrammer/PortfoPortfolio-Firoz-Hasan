@@ -27,7 +27,7 @@ const Protfolio = () => {
         <h2 className="text-white text-3xl lg:text-5xl text-center font-bold mb-5 ">
           Creative Portfolio{" "}
         </h2>
-        <p className="text-gray-300">
+        <p className="text-gray-300 lg:px-32">
           Welcome to my project portfolio! Here, you will find a curated
           selection of my work, showcasing my skills and passion for web
           development. Each project highlights my dedication to delivering
