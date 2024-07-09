@@ -2,15 +2,15 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import image from "../../assets/images/developer.jpg";
 import resume from "../../assets/firoz-resume.pdf";
 import { useState } from "react";
-import { SiWebflow } from "react-icons/si";
 
-import { FaGithub, FaNodeJs, FaReact } from "react-icons/fa6";
 import {
-  SiFirebase,
-  SiMongodb,
-  SiReactrouter,
-  SiTailwindcss,
-} from "react-icons/si";
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
 const About = () => {
   const [loader, setLoader] = useState(false);
   if (loader) {
@@ -20,76 +20,50 @@ const About = () => {
   return (
     <div className="pt-20 md:pt-10">
       <div className="px-10 lg:px-20">
-        <h2 className="font-Poppins text-white text-3xl lg:text-5xl font-bold">
-          About Me
-        </h2>
+        <div className="text-center mb-5 lg:mb-20">
+          <h2 className="font-Poppins text-white text-3xl lg:text-5xl  font-bold mb-3">
+            About Me
+          </h2>
+          <p>
+            Discover more about my journey, skills, and what drives me here.
+          </p>
+        </div>
 
         <div className="flex flex-col md:flex-row items-center md:space-x-20 mt-5 pb-10 border-b border-gray-300 ">
-          <img src={image} className="w-72 md:w-5/12 rounded-lg" alt="" />
-          <div className="text-left mt-4 md:mt-0">
+          <img src={image} className="w-full md:w-5/12 rounded-lg" alt="" />
+          <div className="text-center lg:text-left mt-5 md:mt-0">
             <h3 className="text-3xl text-green-50 lg:text-5xl font-bold">
               Firoz Al Hasan
             </h3>
             <p className="text-base md:text-xl text-gray-300 md:mt-2">
               Front-End Web Developer
             </p>
-            <div className="group mt-8 inline-flex flex-wrap  items-center gap-2">
-              <span
-                data-tooltip-target="money"
-                className="cursor-pointer rounded-full border bg-green-50 p-3 text-black transition-colors hover:border-pink-500/10 hover hover:!opacity-100 group-hover:opacity-70"
-              >
-                <SiTailwindcss></SiTailwindcss>
-              </span>
-              <span
-                data-tooltip-target="wifi"
-                className="cursor-pointer rounded-full border bg-green-50 p-3 text-black transition-colors hover:border-pink-500/10 hover hover:!opacity-100 group-hover:opacity-70"
-              >
-                <FaReact></FaReact>
-              </span>
-
-              <span
-                data-tooltip-target="bedrooms"
-                className="cursor-pointer rounded-full border bg-green-50 p-3 text-black transition-colors hover:border-pink-500/10 hover hover:!opacity-100 group-hover:opacity-70"
-              >
-                <SiReactrouter />
-              </span>
-
-              <span
-                data-tooltip-target="tv"
-                className="cursor-pointer rounded-full border bg-green-50 p-3 text-black transition-colors hover:border-pink-500/10 hover hover:!opacity-100 group-hover:opacity-70"
-              >
-                <SiWebflow />{" "}
-              </span>
-              <span
-                data-tooltip-target="tv"
-                className="cursor-pointer rounded-full border bg-green-50 p-3 text-black transition-colors hover:border-pink-500/10 hover hover:!opacity-100 group-hover:opacity-70"
-              >
-                <FaNodeJs></FaNodeJs>
-              </span>
-              <span
-                data-tooltip-target="fire"
-                className="cursor-pointer rounded-full border bg-green-50 p-3 text-black transition-colors hover:border-pink-500/10 hover hover:!opacity-100 group-hover:opacity-70"
-              >
-                <FaGithub />
-              </span>
-              <span
-                data-tooltip-target="fire"
-                className="cursor-pointer rounded-full border bg-green-50 p-3 text-black transition-colors hover:border-pink-500/10 hover hover:!opacity-100 group-hover:opacity-70"
-              >
-                <SiMongodb></SiMongodb>
-              </span>
-              <span
-                data-tooltip-target="Firebase"
-                className="cursor-pointer rounded-full border bg-green-50 p-3 text-black transition-colors hover:border-pink-500/10 hover hover:!opacity-100 group-hover:opacity-70"
-              >
-                <SiFirebase></SiFirebase>
-              </span>
-              <span
-                data-tooltip-target="more"
-                className="cursor-pointer rounded-full border bg-green-50 p-3 text-black text-xs transition-colors hover:border-pink-500/10 hover hover:!opacity-100 group-hover:opacity-70"
-              >
-                +5
-              </span>
+            <div className="mt-4">
+              <ul className="flex justify-center lg:justify-start space-x-4 text-3xl">
+                <li>
+                  <Link to={"https://github.com/FirozTheProgrammer"}>
+                    <FaGithub></FaGithub>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"https://www.facebook.com/FirozTheProgrammer/"}>
+                    <FaFacebook></FaFacebook>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"https://twitter.com/Developer_Firoz"}>
+                    <FaSquareXTwitter />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    target="blank"
+                    to={"https://www.linkedin.com/in/firoz-al-hasan/"}
+                  >
+                    <FaLinkedin></FaLinkedin>
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -186,12 +160,12 @@ const About = () => {
               Download CV
             </button>
           </a>
-          <a href='' target="_blak">
+          <a href="" target="_blak">
             <button
               type="button"
               className="bg-[#EBE9FC] duration-300 hover:bg-green-400 text-black font-bold rounded-md my-10 px-8 py-2"
             >
-             View CV
+              View CV
             </button>
           </a>
         </div>
