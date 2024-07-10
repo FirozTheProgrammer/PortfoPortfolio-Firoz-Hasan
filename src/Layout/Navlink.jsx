@@ -24,7 +24,6 @@ const Navlink = () => {
         </NavLink>
       </li>
 
-
       <li className="text-lg text-gray-400">
         <NavLink
           to={"/portfolio"}
@@ -32,7 +31,7 @@ const Navlink = () => {
             isActive ? "text-green-500" : isPending ? "pending " : ""
           }
         >
-          Portfolio
+          Projects
         </NavLink>
       </li>
       <li className="text-lg text-gray-400">
@@ -53,7 +52,11 @@ const Navlink = () => {
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-active btn-primary lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn text-black bg-green-400  hover:bg-white  lg:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -76,9 +79,9 @@ const Navlink = () => {
               {NavLinks}
             </ul>
           </div>
-          <Link>
+          <Link to={"/"}>
             <p className="text-4xl font-bold">
-              <span className="text-green-600">Fi</span>roz
+              Firoz<span className="text-green-400">.</span>
             </p>
           </Link>
         </div>
@@ -86,7 +89,11 @@ const Navlink = () => {
           <ul className="menu menu-horizontal px-1">{NavLinks}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-active btn-primary">Button</a>
+          <Link to={"/contact"}>
+            <button className="btn  text-black bg-green-400  hover:bg-white ">
+              Hire Me
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaSquareXTwitter,
+  FaSquareInstagram  
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -41,26 +42,43 @@ const About = () => {
             <div className="mt-4">
               <ul className="flex justify-center lg:justify-start space-x-4 text-3xl">
                 <li>
-                  <Link to={"https://github.com/FirozTheProgrammer"}>
+                  <Link
+                    to={"https://github.com/FirozTheProgrammer"}
+                    target="_blank"
+                  >
                     <FaGithub></FaGithub>
                   </Link>
                 </li>
                 <li>
-                  <Link to={"https://www.facebook.com/FirozTheProgrammer/"}>
-                    <FaFacebook></FaFacebook>
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"https://twitter.com/Developer_Firoz"}>
-                    <FaSquareXTwitter />
+                  <Link
+                    target="_blank"
+                    to={"https://www.linkedin.com/in/firoz-al-hasan/"}
+                  >
+                    <FaLinkedin></FaLinkedin>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    target="blank"
-                    to={"https://www.linkedin.com/in/firoz-al-hasan/"}
+                    target="_blank"
+                    to={"https://www.instagram.com/firoztheprogrammer/?hl=en/"}
                   >
-                    <FaLinkedin></FaLinkedin>
+                    <FaSquareInstagram  />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"https://www.facebook.com/FirozTheProgrammer/"}
+                    target="_blank"
+                  >
+                    <FaFacebook></FaFacebook>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"https://twitter.com/Developer_Firoz"}
+                    target="_blank"
+                  >
+                    <FaSquareXTwitter />
                   </Link>
                 </li>
               </ul>
@@ -160,7 +178,10 @@ const About = () => {
               Download CV
             </button>
           </a>
-          <a href="" target="_blak">
+          <a
+            href="https://drive.google.com/file/d/1eTbCpBTL2ZmtHB9SbehbZbjTNai3FJ8d/view"
+            target="_blak"
+          >
             <button
               type="button"
               className="bg-[#EBE9FC] duration-300 hover:bg-green-400 text-black font-bold rounded-md my-10 px-8 py-2"

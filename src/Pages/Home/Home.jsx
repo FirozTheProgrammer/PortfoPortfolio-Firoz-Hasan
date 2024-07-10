@@ -9,6 +9,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaSquareXTwitter,
+  FaSquareInstagram,
 } from "react-icons/fa6";
 
 const Home = () => {
@@ -47,26 +48,43 @@ const Home = () => {
               </a>
               <ul className="flex justify-center lg:justify-start space-x-4 text-3xl">
                 <li>
-                  <Link to={"https://github.com/FirozTheProgrammer"}>
+                  <Link
+                    to={"https://github.com/FirozTheProgrammer"}
+                    target="_blank"
+                  >
                     <FaGithub></FaGithub>
                   </Link>
                 </li>
                 <li>
-                  <Link to={"https://www.facebook.com/FirozTheProgrammer/"}>
-                    <FaFacebook></FaFacebook>
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"https://twitter.com/Developer_Firoz"}>
-                    <FaSquareXTwitter />
+                  <Link
+                    target="_blank"
+                    to={"https://www.linkedin.com/in/firoz-al-hasan/"}
+                  >
+                    <FaLinkedin></FaLinkedin>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    target="blank"
-                    to={"https://www.linkedin.com/in/firoz-al-hasan/"}
+                    target="_blank"
+                    to={"https://www.instagram.com/firoztheprogrammer/?hl=en/"}
                   >
-                    <FaLinkedin></FaLinkedin>
+                    <FaSquareInstagram />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"https://www.facebook.com/FirozTheProgrammer/"}
+                    target="_blank"
+                  >
+                    <FaFacebook></FaFacebook>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={"https://twitter.com/Developer_Firoz"}
+                    target="_blank"
+                  >
+                    <FaSquareXTwitter />
                   </Link>
                 </li>
               </ul>

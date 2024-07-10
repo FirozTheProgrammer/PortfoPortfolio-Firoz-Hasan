@@ -1,6 +1,5 @@
 // import { Link } from "react-router-dom";
 import { useState } from "react";
-import img1 from "../../assets/images/car_shop.jpeg";
 import img2 from "../../assets/images/phone_Express.jpeg";
 import img3 from "../../assets/images/hockeys.jpeg";
 import img4 from "../../assets/images/gamerzone.jpeg";
@@ -23,11 +22,11 @@ const Protfolio = () => {
   }
   return (
     <div className="pt-20 md:pt-10  px-10 lg:px-20">
-      <div className="lg:mb-20 text-center ">
-        <h2 className="text-white text-3xl lg:text-5xl text-center font-bold mb-5 ">
+      <div className="mb-10 lg:mb-20 text-center ">
+        <h2 className="text-white text-3xl lg:text-5xl text-center font-bold mb-3 lg:mb-5 ">
           Creative Portfolio{" "}
         </h2>
-        <p className="text-gray-300 lg:px-32">
+        <p className="text-gray-300  lg:px-32">
           Welcome to my project portfolio! Here, you will find a curated
           selection of my work, showcasing my skills and passion for web
           development. Each project highlights my dedication to delivering
@@ -37,7 +36,7 @@ const Protfolio = () => {
           I have tackled and the impactful results I have achieved.
         </p>
       </div>
-      <div className="grid  md:grid-cols-2 gap-4 md:gap-10 lg:gap-20">
+      <div className="grid  md:grid-cols-2 gap-10 lg:gap-20">
         {/* <Link to={'https://tech-info-5ab1a.web.app/'} target="_blank" className="tooltip" data-tip="View Live" >
                     <img className="max-h-[500px]" src={img1} alt="" />
                 </Link>
