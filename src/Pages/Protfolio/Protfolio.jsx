@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+import * as React from 'react';
 import { useState } from "react";
 import img2 from "../../assets/images/phone_Express.jpeg";
 import img3 from "../../assets/images/hockeys.jpeg";
@@ -14,12 +15,24 @@ import {
 } from "react-icons/si";
 import { Link } from "react-router-dom";
 
+import Box from '@mui/material/Box';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+
 const Protfolio = () => {
   const [loader, setLoader] = useState(false);
   if (loader) {
     setLoader(true);
     return <span className="loading loading-ring loading-lg"></span>;
   }
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
     <div className="pt-20 md:pt-10  px-10 lg:px-20">
       <div className="mb-10 lg:mb-20 text-center ">
@@ -36,6 +49,24 @@ const Protfolio = () => {
           I have tackled and the impactful results I have achieved.
         </p>
       </div>
+
+      <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
+      <Tabs value={value} onChange={handleChange} centered>
+        <Tab label="Item One" />
+        <Tab label="Item Two" />
+        <Tab label="Item Three" />
+      </Tabs>
+      <CustomTabPanel value={value} index={0}>
+        Item One
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>
+        Item Two
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+        Item Three
+      </CustomTabPanel>
+    </Box>
+
       <div className="grid  md:grid-cols-2 gap-10 lg:gap-20">
         {/* <Link to={'https://tech-info-5ab1a.web.app/'} target="_blank" className="tooltip" data-tip="View Live" >
                     <img className="max-h-[500px]" src={img1} alt="" />
