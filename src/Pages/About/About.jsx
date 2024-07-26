@@ -52,7 +52,7 @@ const About = () => {
                 <li>
                   <Link
                     target="_blank"
-                    to={"https://www.linkedin.com/in/firoz-al-hasan/"}
+                    to={"https://bd.linkedin.com/in/firoz-al-hasan"}
                   >
                     <FaLinkedin></FaLinkedin>
                   </Link>
