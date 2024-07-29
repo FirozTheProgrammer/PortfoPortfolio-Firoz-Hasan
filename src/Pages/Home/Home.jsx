@@ -11,6 +11,7 @@ import {
   FaSquareXTwitter,
   FaSquareInstagram,
 } from "react-icons/fa6";
+import Protfolio from "../Protfolio/Protfolio";
 
 const Home = () => {
   return (
@@ -130,6 +131,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="border-b-2 border-gray-400 mt-20 mb-10 w-full mx-auto"></div>
+
+      <Protfolio></Protfolio>
     </Container>
   );
 };
